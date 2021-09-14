@@ -1,19 +1,93 @@
 {
-  "posts": [
+  "users": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "email": "me@me.com",
+      "userName": "Ishmael"
+    },
+    {
+      "id": 2,
+      "email": "ahab@whale.com",
+      "userName": "Ahab"
+    },
+    {
+      "id": 3,
+      "email": "dpr@dreadpirateroberts.com",
+      "userName": "DreadPirate1699"
     }
-  ],
-  "comments": [
+  ],  
+  "yachts": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "yachtName": "nautilus",
+      "length": 55,
+      "user_id": 3,
+      "average_rating": 9,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Yacht_skat_2009_rhodos.jpg"
+    },
+    {
+      "id": 2,
+      "yachtName": "MB01",
+      "length": 30,
+      "user_id": 2,
+      "average_rating": 7,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Yacht_MB01.jpg/1600px-Yacht_MB01.jpg"
+    },
+    {
+      "id": 3,
+      "yachtName": "Attessa IV",
+      "length": 225,
+      "user_id": 2,
+      "average_rating": 8,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Attessa_IV_%24150mil_mega_yacht.jpg/640px-Attessa_IV_%24150mil_mega_yacht.jpg"
+    },
+    {
+      "id": 4,
+      "yachtName": "Paradiso",
+      "length": 20,
+      "user_id": 1,
+      "average_rating": 4,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Paradiso_Yacht_Near_Newport_Beach.jpg/640px-Paradiso_Yacht_Near_Newport_Beach.jpg"
+    },
+    {
+      "id": 5,
+      "yachtName": "Infinity",
+      "length": 40,
+      "user_id": 1,
+      "average_rating": 7,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Yacht_Infinity_in_a_bay_near_Ladiko._Rhodes%2C_Greece.jpg/640px-Yacht_Infinity_in_a_bay_near_Ladiko._Rhodes%2C_Greece.jpg"
+    },
+    {
+      "id": 6,
+      "yachtName": "Agram",
+      "length": 175,
+      "user_id": 3,
+      "average_rating": 9,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Agram%2C_Zadar_%28P1080815%29.jpg/640px-Agram%2C_Zadar_%28P1080815%29.jpg"
+    },
+    {
+      "id": 7,
+      "yachtName": "Barcelona",
+      "length": 22,
+      "user_id": 2,
+      "average_rating": 5,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Yacht_in_Barcelona_-_2017.jpg/640px-Yacht_in_Barcelona_-_2017.jpg"
+    },
+    {
+      "id": 8,
+      "yachtName": "Pershing 90",
+      "length": 30,
+      "user_id": 3,
+      "average_rating": 6,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Yacht_Pershing_90.jpg/640px-Yacht_Pershing_90.jpg"
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "ratings": [
+    {
+      "id": 1,
+      "yacht_id": 1,
+      "user_id": 3,
+      "rating": 9
+    }
+  ]
 }

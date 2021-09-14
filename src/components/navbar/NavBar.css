@@ -1,0 +1,11 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: lightsteelblue;
+}
+
+.navbar__item {
+    list-style-type: none;
+    margin-right: .25rem;
+    padding-right: 3rem;
+}

@@ -1,0 +1,36 @@
+.yachtViewWrapper {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.mainYachtImage {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.primaryImageView {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.secondaryImageView {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.secondaryYachtImage {
+    display: flex;
+    width: auto;
+    height: auto;
+
+}
+
+.btnDiv {
+    margin: .25rem;
+}
+

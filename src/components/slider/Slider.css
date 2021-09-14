@@ -1,0 +1,11 @@
+.slider {
+    margin: 1rem;
+    padding-bottom: .5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    background-color: lightsteelblue;
+}
+
+.number {
+    margin-top: .6rem;
+}
