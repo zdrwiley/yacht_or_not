@@ -24,8 +24,8 @@
   "yachts": [
     {
       "id": 1,
-      "yachtName": "nautilus",
-      "length": 55,
+      "yachtName": "Nautilus",
+      "length": 155,
       "user_id": 3,
       "type": 1,
       "average_rating": 9,
@@ -73,7 +73,7 @@
       "length": 175,
       "user_id": 3,
       "average_rating": 9,
-      "type": 1,
+      "type": 2,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Agram%2C_Zadar_%28P1080815%29.jpg/640px-Agram%2C_Zadar_%28P1080815%29.jpg"
     },
     {

@@ -6,11 +6,18 @@ export const YachtContext = createContext()
 
 export const YachtProvider = (props) => {
     const [yachts, setYachts] = useState( [] )
+    const [types, setTypes] = useState( [])
 
     const getYachts = () => {
         return fetch(`${database}/yachts`)
         .then(res => res.json())
         .then(setYachts)
+    }
+
+    const getTypes = () => {
+        return fetch(`${database}/types`)
+        .then(res => res.json())
+        .then(setTypes)
     }
 
     const addYacht = yacht => {
@@ -37,7 +44,7 @@ export const YachtProvider = (props) => {
 
     return (
         <YachtContext.Provider value={{
-            yachts, getYachts, addYacht, rateYacht
+            yachts, getYachts, addYacht, rateYacht, types, getTypes
         }}>
             {props.children}
         </YachtContext.Provider>

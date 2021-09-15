@@ -6,6 +6,7 @@ import { YachtView } from "./yachts/Yachts"
 import { YachtRatingFlow } from "./yachts/YachtRatingFlow"
 import { RankingView } from "./rankings/RankingsList"
 import { SubmitForm } from "./submit/Submit"
+import { AboutSite } from "./about/About"
 
 export const ApplicationViews = () => {
     return (
@@ -26,6 +27,10 @@ export const ApplicationViews = () => {
 
           <Route path="/submit/">
             <SubmitForm/>
+          </Route>
+
+          <Route path="/about/">
+            <AboutSite/>
           </Route>
 
         </YachtProvider>

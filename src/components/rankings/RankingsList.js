@@ -5,9 +5,13 @@ import "./Rankings.css"
 
 export const RankingView = () => {
     const {yachts, getYachts} = useContext(YachtContext)
+    //instead of defining types seperately, can I just expand yachts to include the types array?
+    const {types, getTypes} = useContext(YachtContext)
    
+
+
     useEffect(() => {
-        getYachts()
+        getYachts().then(getTypes())
     }, [])
 
     return (
@@ -25,6 +29,9 @@ export const RankingView = () => {
                     </div>
                     <div className="yachtAverageRating">
                         Average Rating: { yacht.average_rating }
+                    </div>
+                    <div className="yachtType">
+                        Type: { parseInt(yacht.type) }
                     </div>
                     <div className="yachtPhoto">
                         <img src={`${yacht.image}`} alt="yacht"/> 
