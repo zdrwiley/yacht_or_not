@@ -6,7 +6,7 @@ import { ApplicationViews } from "./ApplicationViews"
 
 export const Yacht = () => {
     return (
-        <div class="wrapper"> 
+        <div class="outerWrapper"> 
 
             <div class="navbar">
                 <Route>
@@ -14,17 +14,20 @@ export const Yacht = () => {
                 </Route>
             </div>
 
-            <div class='title'>
-                <h1>Yacht or Not</h1>
-            </div>
-
             <div class="body">
-                <div class='main_image'>
+
+                <div class='title'>
+                    <h1>Yacht or Not</h1>
+                </div>
+                
+                <div>
                     <ApplicationViews/>
                 </div>
-                <div class='footer'>
-                    <footer>Help us keep this site FUN, CLEAN, and NAUTICAL</footer>
-                </div>
+            </div>
+
+            <div class='footer'>
+                    <p>Help us keep this site FUN, CLEAN, and NAUTICAL</p>
+                    <p><a href="./about">Why does this exist?</a></p>
             </div>
         </div>
         )

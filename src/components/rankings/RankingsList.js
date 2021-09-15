@@ -9,11 +9,29 @@ export const RankingView = () => {
     useEffect(() => {
         getYachts()
     }, [])
-  
+
     return (
         <div className="rankingsWrapper">
             <h1>The Yacht List</h1>
             <h3>All-time most yachty yachts:</h3>
+            {yachts.map(yacht => {
+                return (
+                <div className="ranking" key={`rankingList=${yacht.id}`} id={`rank=${yacht.id}`}>
+                    <div className="YachtName">
+                        Name:  { yacht.yachtName }
+                    </div>
+                    <div className="yachtLength">
+                        Length: {yacht.length }
+                    </div>
+                    <div className="yachtAverageRating">
+                        Average Rating: { yacht.average_rating }
+                    </div>
+                    <div className="yachtPhoto">
+                        <img src={`${yacht.image}`} alt="yacht"/> 
+                    </div>
+                 </div>
+                )
+            } )}
         </div>
     )
 }

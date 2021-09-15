@@ -1,0 +1,13 @@
+.uploadForm {
+    display: block; 
+    border: 2px solid lightsteelblue;
+    margin: 1em;
+    padding: 1em;   
+}
+
+.form-group {
+    display: flex;
+    align-content: flex-start;
+    margin: 1em;
+    padding: 1em;   
+}

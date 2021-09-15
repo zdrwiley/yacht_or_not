@@ -1,6 +1,11 @@
 {
   "users": [
     {
+      "id": 0,
+      "email": "test@user.com",
+      "userName": "Default_User"
+    },
+    {
       "id": 1,
       "email": "me@me.com",
       "userName": "Ishmael"
@@ -15,13 +20,14 @@
       "email": "dpr@dreadpirateroberts.com",
       "userName": "DreadPirate1699"
     }
-  ],  
+  ],
   "yachts": [
     {
       "id": 1,
       "yachtName": "nautilus",
       "length": 55,
       "user_id": 3,
+      "type": 1,
       "average_rating": 9,
       "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Yacht_skat_2009_rhodos.jpg"
     },
@@ -31,6 +37,7 @@
       "length": 30,
       "user_id": 2,
       "average_rating": 7,
+      "type": 1,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Yacht_MB01.jpg/1600px-Yacht_MB01.jpg"
     },
     {
@@ -39,6 +46,7 @@
       "length": 225,
       "user_id": 2,
       "average_rating": 8,
+      "type": 1,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Attessa_IV_%24150mil_mega_yacht.jpg/640px-Attessa_IV_%24150mil_mega_yacht.jpg"
     },
     {
@@ -47,6 +55,7 @@
       "length": 20,
       "user_id": 1,
       "average_rating": 4,
+      "type": 1,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Paradiso_Yacht_Near_Newport_Beach.jpg/640px-Paradiso_Yacht_Near_Newport_Beach.jpg"
     },
     {
@@ -55,6 +64,7 @@
       "length": 40,
       "user_id": 1,
       "average_rating": 7,
+      "type": 1,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Yacht_Infinity_in_a_bay_near_Ladiko._Rhodes%2C_Greece.jpg/640px-Yacht_Infinity_in_a_bay_near_Ladiko._Rhodes%2C_Greece.jpg"
     },
     {
@@ -63,6 +73,7 @@
       "length": 175,
       "user_id": 3,
       "average_rating": 9,
+      "type": 1,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Agram%2C_Zadar_%28P1080815%29.jpg/640px-Agram%2C_Zadar_%28P1080815%29.jpg"
     },
     {
@@ -71,6 +82,7 @@
       "length": 22,
       "user_id": 2,
       "average_rating": 5,
+      "type": 1,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Yacht_in_Barcelona_-_2017.jpg/640px-Yacht_in_Barcelona_-_2017.jpg"
     },
     {
@@ -79,7 +91,17 @@
       "length": 30,
       "user_id": 3,
       "average_rating": 6,
+      "type": 1,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Yacht_Pershing_90.jpg/640px-Yacht_Pershing_90.jpg"
+    },
+    {
+      "yachtName": "Boaty McBoatface",
+      "length": 225,
+      "user_id": 0,
+      "average_rating": 0,
+      "image": "https://static01.nyt.com/images/2016/03/22/nytnow/22xp-boaty/22xp-boaty-superJumbo.jpg",
+      "type": 1,
+      "id": 9
     }
   ],
   "ratings": [
@@ -88,6 +110,36 @@
       "yacht_id": 1,
       "user_id": 3,
       "rating": 9
+    }
+  ],
+  "types": [
+    {
+      "description": "Motorboat",
+      "id": 1
+    },
+    {
+      "description": "Sailboat",
+      "id": 2
+    },
+    {
+      "description": "Dinghy",
+      "id": 3
+    },
+    {
+      "description": "Warship",
+      "id": 4
+    },
+    {
+      "description": "Container Ship",
+      "id": 5
+    },
+    {
+      "description": "Speedboat",
+      "id": 6
+    },
+    {
+      "description": "Mega Yacht",
+      "id": 7
     }
   ]
 }

@@ -1,36 +1,36 @@
-.yachtViewWrapper {
+.outerYachtWrapper {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
 }
 
-.mainYachtImage {
+.ratingTool {
+    display: flex;
+    justify-content: space-evenly;
+    padding: .5rem 0rem .5rem 0rem;
+    background-color: lightsteelblue;
+    outline: solid black .5px;
+    cursor: pointer;
+}
+    .on {
+        background-color: lightsteelblue;
+    }
+    .off {
+        background-color: (231, 232, 235);
+    }
+
+h2 {
+    text-align: center;
+}
+
+img {
+    display: flex;
     width: 100%;
-    max-width: 600px;
     height: auto;
-}
-
-.primaryImageView {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-}
-
-.secondaryImageView {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    padding-top: 3rem;
-    padding-bottom: 5rem;
-}
-
-.secondaryYachtImage {
-    display: flex;
-    width: auto;
-    height: auto;
-
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .btnDiv {
-    margin: .25rem;
+    margin: auto;
 }
 

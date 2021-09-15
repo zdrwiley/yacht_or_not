@@ -1,8 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useContext, useEffect, useState } from "react"
-import { Route, useHistory } from "react-router-dom"
+import { useHistory } from "react-router-dom"
 import { YachtContext } from "./YachtProvider"
-import { SliderBar } from "../slider/Slider"
+import { RatingTool } from "../ratings/Rating"
 import "./Yachts.css"
 
 export const YachtView = () => {
@@ -20,7 +20,7 @@ export const YachtView = () => {
     useEffect(() => {
         getYachts().then(() => {
             if (yachts.length > 0) {pickYacht()}
-        })
+        }).then(setSessionStorage())
     }, [])
   
     const pickYacht = () => {
@@ -28,28 +28,30 @@ export const YachtView = () => {
         setCurrentYacht(yachtArray.pop())
     }
 
+    const setSessionStorage = () => {
+        sessionStorage.setItem("saved_yacht_image", currentYacht.image)
+        // sessionStorage.setItem("yacht_rating", document.getElementById('rating').value)
+    }
+
     return (
-        <div className="outerYachtWrapper"> 
-             <div class='slider'>
-                <Route>
-                    <SliderBar />
-                </Route>
+        <div className="outerYachtWrapper">
+            <div className="topToolText">
+                    <h2>Is this a yacht?</h2>
+            </div> 
+             <div class="ratingTool">
+                <RatingTool/>
             </div>
-        <div className="yachtViewWrapper">
-            <div className="primaryImageView">
-                <div className="galleryText">
-                    <h2>Is this a yacht? ...or is it Not?</h2>
-                </div>
-                <div className="mainYachtImage">
-                    <img src={currentYacht.image} alt="Vessel to be Rated by User"/>
-                </div>
-                <div className="btnDiv">
-                    <button className="btn btn-primary skipBtn" onClick={() => history.push("/yachts/ratingflow")}>
-                    Rate and Next
-                    </button>
-                </div>
+            <div className="bottomToolText">
+                    <h2>...or is it Not?</h2>
+            </div> 
+            <div className="btnDiv">
+                <button className="btn btn-primary skipBtn" onClick={() => history.push("/yachts/ratingflow")}>
+                    Submit Your Rating to Show The Next Vessel!
+                </button>
             </div>
-        </div>
+            <div className="mainYachtImage">
+                <img src={currentYacht.image} alt="Vessel to be Rated by User"/>
+            </div>
         </div>
     )
 }

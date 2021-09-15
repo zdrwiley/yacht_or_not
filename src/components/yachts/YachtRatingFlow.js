@@ -1,13 +1,11 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useContext, useEffect, useState } from "react"
-import { Route } from "react-router-dom"
-import { YachtContext } from "./YachtProvider"
-import { SliderBar } from "../slider/Slider"
+import React, { useState } from "react"
+// import { YachtContext } from "./YachtProvider"
 import "./Yachts.css"
 
 export const YachtRatingFlow = () => {
-    const {yachts, getYachts, rateYacht} = useContext(YachtContext)
-    const [currentYacht, setCurrentYacht] = useState({
+    // const {yachts } = useContext(YachtContext)
+    const [currentYacht] = useState({
         "id": 1,
         "yachtName": "nautilus",
         "length": 55,
@@ -17,11 +15,15 @@ export const YachtRatingFlow = () => {
       })
 
     
+    // const pickNewYacht = () => {
+    //     let yachtArray = [...yachts]
+    //     setCurrentYacht(yachtArray.pop())
+    // }
 
-    const pickNewYacht = () => {
-        let yachtArray = [...yachts]
-        setCurrentYacht(yachtArray.pop())
-    }
+    // const setSessionStorage = () => {
+    //     sessionStorage.setItem("saved_yacht_image", currentYacht.image)
+    //     // sessionStorage.setItem("yacht_rating", document.getElementById('rating').value)
+    // }
 
     // const submitRating = () => {
     //     let oldYacht = [...currentYacht]
@@ -31,9 +33,7 @@ export const YachtRatingFlow = () => {
     return (
         <div className="outerYachtWrapper"> 
              <div class='slider'>
-                <Route>
-                    <SliderBar />
-                </Route>
+                
             </div>
         <div className="yachtViewWrapper">
             <div className="primaryImageView">
@@ -41,10 +41,10 @@ export const YachtRatingFlow = () => {
                     <h2>Is this a yacht? ...or is it Not?</h2>
                 </div>
                 <div className="mainYachtImage">
-                    <img src={currentYacht.image} alt="Vessel to be Rated by User"/>
+                    <img src={currentYacht.image} id="mainYachtImage" alt="Vessel to be Rated by User"/>
                 </div>
                 <div className="btnDiv">
-                    <button className="btn btn-primary skipBtn">
+                    <button className="btn btn-primary skipBtn" onClick={null}>
                     Rate and Next
                     </button>
                 </div>
@@ -52,13 +52,13 @@ export const YachtRatingFlow = () => {
 
             <div className="secondaryImageView">
                 <div className="yourRating">
-                    <h4>Your rating: ${currentYacht.average_rating}</h4>
+                    <h4>Your rating: </h4>
                 </div>
                 <div className="secondaryYachtImage">
-                    <img src={currentYacht.image} alt="Previous Vessel User Rated"/>
+                    <img src={sessionStorage.getItem("saved_yacht_image")} alt="Previous Vessel User Rated"/>
                 </div>
                 <div className="averageRating">
-                    <h4>Average rating:</h4>
+                    <h4>Average rating:{currentYacht.average_rating}</h4>
                 </div>
             </div>
             
