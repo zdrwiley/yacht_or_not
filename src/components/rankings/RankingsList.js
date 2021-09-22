@@ -1,20 +1,27 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useContext, useEffect } from "react"
+import React, { useContext, useEffect, useState } from "react"
 import { YachtContext } from "../yachts/YachtProvider"
 import "./Rankings.css"
 
 export const RankingView = () => {
     const {yachts, getYachts} = useContext(YachtContext)
+    const [rankedYachts, setRankedYachts] = useState({})
  
-    useEffect(() => {
-        getYachts()
-    }, [])
+    useEffect(() => {getYachts()}, [])
 
+    useEffect(() => {
+        const ranked = yachts.sort((a, b) => b.average_rating - a.average_rating) || {}
+        setRankedYachts(ranked)
+    }, [getYachts, yachts])
+
+    if (!yachts.length) return <p>Loading Data</p> 
+    if (!rankedYachts.length) return <p>Loading Data</p> 
+  
     return (
         <div className="rankingsWrapper">
             <h1>The Yacht List</h1>
             <h3>All-time most yachty yachts:</h3>
-            {yachts.map(yacht => {
+            {rankedYachts.map(yacht => {
                 return (
                 <div className="ranking" key={`rankingList=${yacht.id}`} id={`rank=${yacht.id}`}>
                     <div className="YachtName">
