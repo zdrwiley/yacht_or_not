@@ -4,6 +4,7 @@ export const YachtContext = createContext()
 
 export const YachtProvider = (props) => {
     const [yachts, setYachts] = useState([])
+    const [ratings, setRatings] = useState([])
     
     const database = "http://localhost:8088"
 
@@ -33,15 +34,28 @@ export const YachtProvider = (props) => {
             body: JSON.stringify(yacht)
         })
         .then(res => res.json())
+        .then(data => {
+            console.log("rateYacht POST call succeeded:", data);
+        })
+        .catch((error) => {
+            console.error("rateYacht POST call failed:", error);
+        })
     }
 
-    const getYachtById = (yachtId) => {
-        return fetch(`${database}/yachts/${yachtId}`)
-        .then(response => response.json())
+    const getRatings = () => {
+        return fetch(`${database}/ratings`)
+        .then(res => res.json())
+        .then(setRatings)
+        .then(data => {
+            console.log("getRatings fetch call succeeded:", data);
+        })
+        .catch((error) => {
+            console.error("getRatings fetch call failed:", error);
+        })
     }
 
     return (
-        <YachtContext.Provider value={{yachts, setYachts, getYachts, addYacht, rateYacht, getYachtById}}>
+        <YachtContext.Provider value={{yachts, setYachts, getYachts, addYacht, rateYacht, ratings, setRatings, getRatings}}>
             {props.children}
         </YachtContext.Provider>
     )

@@ -6,7 +6,7 @@ import { RatingTool } from "../rating_tool/Rating"
 import "./RatingFlow.css"
 
 export const YachtRatingFlow = () => {
-    const {yachts, getYachts} = useContext(YachtContext)
+    const {yachts, getYachts, rateYacht} = useContext(YachtContext)
     const [filteredYacht, setFilteredYacht] = useState({})
     const [counter, setCounter] = useState(0)
 
@@ -28,6 +28,12 @@ export const YachtRatingFlow = () => {
     const handleClick = () => {
         setSessionStorage()
         setCounter(counter +1)
+        rateYacht(
+            {
+                "yacht_id": filteredYacht.id,
+                "rating": sessionStorage.getItem("yacht_rating")
+            }
+        )
     }
 
     if (!yachts.length) return <p>Loading Data</p> 
@@ -39,7 +45,7 @@ export const YachtRatingFlow = () => {
                 <div className="topToolText">
                         <h2>Is this a yacht?</h2>
                 </div> 
-                <div class="ratingTool">
+                <div className="ratingTool">
                     <RatingTool/>
                 </div>
                 <div className="bottomToolText">

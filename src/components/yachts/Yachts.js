@@ -8,7 +8,7 @@ import "./Yachts.css"
 
 export const YachtView = () => {
     const history = useHistory()
-    const {yachts, getYachts} = useContext(YachtContext)
+    const {yachts, getYachts, rateYacht} = useContext(YachtContext)
     const [filteredYacht, setFilteredYacht] = useState({})
     const [counter, setCounter] = useState(0)
 
@@ -30,6 +30,12 @@ export const YachtView = () => {
     const handleClick = () => {
         setSessionStorage()
         setCounter(counter +1)
+        rateYacht(
+            {
+                "yacht_id": filteredYacht.id,
+                "rating": sessionStorage.getItem("yacht_rating")
+            }
+        )
     }
 
     if (!yachts.length) return <p>Loading Data</p> 
