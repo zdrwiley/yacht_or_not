@@ -3,7 +3,7 @@ import { Route } from "react-router-dom"
 
 import { YachtProvider } from "./yachts/YachtProvider"
 import { YachtView } from "./yachts/Yachts"
-import { YachtRatingFlow } from "./yachts/YachtRatingFlow"
+import { YachtRatingFlow } from "./rating_flow/RatingFlow" 
 import { RankingView } from "./rankings/RankingsList"
 import { SubmitForm } from "./submit/Submit"
 import { AboutSite } from "./about/About"

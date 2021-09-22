@@ -1,0 +1,17 @@
+.outerFlowWrapper {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.primaryFlowView {
+    display: flex;
+    flex-direction: column;
+}
+
+.secondaryFlowView {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-right: 3em;
+    margin-top: 10em;
+}

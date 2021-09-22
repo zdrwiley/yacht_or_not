@@ -6,17 +6,17 @@ import { ApplicationViews } from "./ApplicationViews"
 
 export const Yacht = () => {
     return (
-        <div class="outerWrapper"> 
+        <div className="outerWrapper"> 
 
-            <div class="navbar">
+            <div className="navbar">
                 <Route>
                     <NavBar />
                 </Route>
             </div>
 
-            <div class="body">
+            <div className="body">
 
-                <div class='title'>
+                <div className='title'>
                     <h1>Yacht or Not</h1>
                 </div>
                 
@@ -25,7 +25,7 @@ export const Yacht = () => {
                 </div>
             </div>
 
-            <div class='footer'>
+            <div className='footer'>
                     <p>Help us keep this site FUN, CLEAN, and NAUTICAL</p>
                     <p><a href="./about">Why does this exist?</a></p>
             </div>

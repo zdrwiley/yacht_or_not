@@ -1,57 +1,63 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useContext, useEffect, useState } from "react"
 import { useHistory } from "react-router-dom"
 import { YachtContext } from "./YachtProvider"
-import { RatingTool } from "../ratings/Rating"
+import { RatingTool } from "../rating_tool/Rating"
 import "./Yachts.css"
 
 export const YachtView = () => {
     const history = useHistory()
     const {yachts, getYachts} = useContext(YachtContext)
-    const [currentYacht, setCurrentYacht] = useState({
-        "id": 1,
-        "yachtName": "nautilus",
-        "length": 55,
-        "user_id": 3,
-        "average_rating": 9,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Yacht_skat_2009_rhodos.jpg"
-      })
+    const [filteredYacht, setFilteredYacht] = useState({})
+    const [counter, setCounter] = useState(0)
+
+    useEffect(() => {setCounter(counter +1)}, [])
+
+    useEffect(() => {getYachts()}, [])
 
     useEffect(() => {
-        getYachts().then(() => {
-            if (yachts.length > 0) {pickYacht()}
-        }).then(setSessionStorage())
-    }, [])
-  
-    const pickYacht = () => {
-        let yachtArray = [...yachts]
-        setCurrentYacht(yachtArray.pop())
-    }
+        const subset = yachts.find(yacht => yacht.id === counter) || {}
+        setFilteredYacht(subset)
+    }, [getYachts, yachts, counter])
+
 
     const setSessionStorage = () => {
-        sessionStorage.setItem("saved_yacht_image", currentYacht.image)
-        // sessionStorage.setItem("yacht_rating", document.getElementById('rating').value)
+        sessionStorage.setItem("saved_yacht_image", filteredYacht.image)
+        sessionStorage.setItem("yacht_last_rated", filteredYacht.average_rating)
     }
 
+    const handleClick = () => {
+        setSessionStorage()
+        setCounter(counter +1)
+    }
+
+    if (!yachts.length) return <p>Loading Data</p> 
+    if (!filteredYacht.length) return <p>Loading Data</p> 
+    
     return (
         <div className="outerYachtWrapper">
             <div className="topToolText">
                     <h2>Is this a yacht?</h2>
             </div> 
-             <div class="ratingTool">
+             <div className="ratingTool">
                 <RatingTool/>
             </div>
             <div className="bottomToolText">
                     <h2>...or is it Not?</h2>
             </div> 
             <div className="btnDiv">
-                <button className="btn btn-primary skipBtn" onClick={() => history.push("/yachts/ratingflow")}>
-                    Submit Your Rating to Show The Next Vessel!
+                <button className="btn btn-primary rateBtn" onClick={() => (`${history.push(`/yachts/ratingflow/`)} & ${handleClick()}`)}>
+                    Submit Rating to Show Next Vessel
                 </button>
             </div>
             <div className="mainYachtImage">
-                <img src={currentYacht.image} alt="Vessel to be Rated by User"/>
+                { filteredYacht.id ?  
+                    <img src={filteredYacht.image} alt="Is this a yacht?"/>  
+                   : <p>didn't load</p> 
+                }                           
             </div>
-        </div>
+        </div> 
     )
 }
+

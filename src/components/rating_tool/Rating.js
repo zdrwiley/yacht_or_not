@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 
 export const RatingTool = () => {
-    const [rating, setRating] = useState(0)
+    const [rating, setRating ] = useState(0)
     const [hover, setHover] = useState(0)
     let n = 0
     return (
@@ -13,7 +13,7 @@ export const RatingTool = () => {
                         type="button"
                         key={index}
                         className={index <= (hover || rating) ? "on" : "off"}
-                        onClick={() => setRating(index)}
+                        onClick={() => setRating(index) & sessionStorage.setItem("yacht_rating", index)}
                         onMouseEnter={() => setHover(index)}
                         onMouseLeave={() => setHover(rating)}
                     > 

@@ -97,7 +97,7 @@
     {
       "yachtName": "Boaty McBoatface",
       "length": 225,
-      "user_id": 0,
+      "user_id": 3,
       "average_rating": 0,
       "image": "https://static01.nyt.com/images/2016/03/22/nytnow/22xp-boaty/22xp-boaty-superJumbo.jpg",
       "type": 1,
@@ -110,6 +110,56 @@
       "yacht_id": 1,
       "user_id": 3,
       "rating": 9
+    },
+    {
+      "yacht_id": 1,
+      "rating": "5",
+      "id": 2
+    },
+    {
+      "yacht_id": 9,
+      "rating": "5",
+      "id": 3
+    },
+    {
+      "yacht_id": 9,
+      "rating": "5",
+      "id": 4
+    },
+    {
+      "yacht_id": 9,
+      "rating": "5",
+      "id": 5
+    },
+    {
+      "yacht_id": 9,
+      "rating": "5",
+      "id": 6
+    },
+    {
+      "yacht_id": 9,
+      "rating": "5",
+      "id": 7
+    },
+    {
+      "yacht_id": 9,
+      "rating": "5",
+      "id": 8
+    },
+    {
+      "yacht_id": 9,
+      "rating": "5",
+      "id": 9
+    },
+    {
+      "yacht_id": 9,
+      "rating": "5",
+      "id": 10
+    },
+    {
+      "yacht_id": 9,
+      "rating": "5",
+      "id": 11
     }
   ],
   "types": [
