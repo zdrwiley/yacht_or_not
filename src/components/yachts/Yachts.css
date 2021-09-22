@@ -7,8 +7,8 @@
     display: flex;
     justify-content: space-evenly;
     padding: .5rem 0rem .5rem 0rem;
-    background-color: lightsteelblue;
-    outline: solid black .5px;
+    background-color: lightgray;
+    outline: solid navy .5px;
     cursor: pointer;
 }
     .on {
@@ -22,15 +22,17 @@ h2 {
     text-align: center;
 }
 
-img {
+img.mainYachtImage {
     display: flex;
     width: 100%;
     height: auto;
+    border: solid .5px navy;
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
 
 .btnDiv {
     margin: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 

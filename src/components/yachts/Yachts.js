@@ -43,23 +43,18 @@ export const YachtView = () => {
     
     return (
         <div className="outerYachtWrapper">
-            <div className="topToolText">
-                    <h2>Is this a yacht?</h2>
-            </div> 
              <div className="ratingTool">
                 <RatingTool/>
             </div>
-            <div className="bottomToolText">
-                    <h2>...or is it Not?</h2>
-            </div> 
+            <br></br>
             <div className="btnDiv">
-                <button className="btn btn-primary rateBtn" onClick={() => (`${history.push(`/yachts/ratingflow/`)} & ${handleClick()}`)}>
-                    Submit Rating to Show Next Vessel
+                <button className="button" onClick={() => (`${history.push(`/yachts/ratingflow/`)} & ${handleClick()}`)}>
+                    Rate and Show Next!
                 </button>
             </div>
             <div className="mainYachtImage">
                 { filteredYacht.id ?  
-                    <img src={filteredYacht.image} alt="Is this a yacht?"/>  
+                    <img className="mainYachtImage" src={filteredYacht.image} alt="Is this a yacht?"/>  
                    : <p>didn't load</p> 
                 }                           
             </div>

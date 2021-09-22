@@ -3,6 +3,7 @@ import { Route } from "react-router-dom"
 import { NavBar } from "./navbar/NavBar"
 import "./Yacht-or-not.css"
 import { ApplicationViews } from "./ApplicationViews"
+import MyImage from "./resources/YACHT (1).gif"
 
 export const Yacht = () => {
     return (
@@ -16,8 +17,8 @@ export const Yacht = () => {
 
             <div className="body">
 
-                <div className='title'>
-                    <h1>Yacht or Not</h1>
+                <div className='main_logo'>
+                    <img src={MyImage} alt="Yacht or Not"/>
                 </div>
                 
                 <div>

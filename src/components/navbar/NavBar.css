@@ -1,11 +1,36 @@
 .navbar {
     display: flex;
     flex-direction: row;
-    background-color: lightsteelblue;
+    background-color: lightgray;
 }
 
 .navbar__item {
     list-style-type: none;
     margin-right: .25rem;
     padding-right: 3rem;
+    margin-top: 1.5rem;
+    color: navy;
 }
+
+.navbar__logo {
+    margin-top: -.75rem;
+    margin-right: -3rem;
+    margin-left: -5rem;
+}
+
+/* unvisited link */
+a:link {
+    color: navy;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: navy;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: darkred;
+  }

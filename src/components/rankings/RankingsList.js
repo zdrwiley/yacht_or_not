@@ -33,11 +33,8 @@ export const RankingView = () => {
                     <div className="yachtAverageRating">
                         Average Rating: { yacht.average_rating }
                     </div>
-                    <div className="yachtType">
-                        Type: { parseInt(yacht.type) }
-                    </div>
                     <div className="yachtPhoto">
-                        <img src={`${yacht.image}`} alt="yacht"/> 
+                        <img className="yachtPhoto" src={`${yacht.image}`} alt="yacht"/> 
                     </div>
                  </div>
                 )
