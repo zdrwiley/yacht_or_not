@@ -1,15 +1,20 @@
 .outerYachtWrapper {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
 .ratingTool {
     display: flex;
+    width: 80%;
     justify-content: space-evenly;
     padding: .5rem 0rem .5rem 0rem;
     background-color: lightgray;
     outline: solid navy .5px;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
 }
     .on {
         background-color: lightsteelblue;
@@ -24,11 +29,13 @@ h2 {
 
 img.mainYachtImage {
     display: flex;
-    width: 100%;
+    width: 80%;
     height: auto;
     border: solid .5px navy;
     margin-top: 2rem;
     margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btnDiv {

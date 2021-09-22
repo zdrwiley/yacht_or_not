@@ -27,7 +27,6 @@ export const Yacht = () => {
             </div>
 
             <div className='footer'>
-                    <p>Help us keep this site FUN, CLEAN, and NAUTICAL</p>
                     <p><a href="./about">Why does this exist?</a></p>
             </div>
         </div>

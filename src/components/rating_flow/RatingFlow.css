@@ -6,6 +6,8 @@
 .innerFlowWrapper {
     display: flex;
     flex-direction: row-reverse;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .primaryFlowView {
@@ -23,7 +25,7 @@
 
 .mainYachtImage {
     display: flex;
-    width: auto;
+    width: 100%;
 }
 
 .secondaryYachtImage {

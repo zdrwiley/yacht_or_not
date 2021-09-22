@@ -8,7 +8,6 @@
     list-style-type: none;
     margin-right: .25rem;
     padding-right: 3rem;
-    margin-top: 1.5rem;
     color: navy;
 }
 
@@ -22,7 +21,7 @@
 a:link {
     color: navy;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
   }
   
   /* visited link */

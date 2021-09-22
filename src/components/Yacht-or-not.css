@@ -1,9 +1,11 @@
 .body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
     margin-left: auto;
     margin-right: auto;
-    width: 65%;
+    width: 80%;
 }
 
 .main_logo {
@@ -15,9 +17,6 @@
 }
 
 .footer {
-    border-top: .1rem solid black;
-    margin-top: 1rem;
-    padding-top: .5rem;
     width: 100%;
     text-align: center;
 }
