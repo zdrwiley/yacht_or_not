@@ -1,5 +1,10 @@
 .outerFlowWrapper {
     display: flex;
+    flex-direction: column;
+}
+
+.innerFlowWrapper {
+    display: flex;
     flex-direction: row-reverse;
 }
 
@@ -11,7 +16,17 @@
 .secondaryFlowView {
     display: flex;
     flex-direction: column;
+    width: 50%;
+    margin-right: 1em;
+    margin-top: 2em;
+}
+
+.mainYachtImage {
+    display: flex;
+    width: auto;
+}
+
+.secondaryYachtImage {
+    display: flex;
     width: 90%;
-    margin-right: 3em;
-    margin-top: 10em;
 }

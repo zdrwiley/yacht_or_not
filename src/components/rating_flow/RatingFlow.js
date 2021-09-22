@@ -41,23 +41,19 @@ export const YachtRatingFlow = () => {
 
     return (
         <div className="outerFlowWrapper"> 
+            <div className="ratingTool">
+                <RatingTool/>
+            </div>
+            <br></br>
+            <div className="btnDiv">
+                <button className="btn btn-primary rateBtn" onClick={handleClick}>
+                    Rate and Show Next!
+                </button>
+            </div>
+        <div className="innerFlowWrapper"> 
             <div className="primaryFlowView">
-                <div className="topToolText">
-                        <h2>Is this a yacht?</h2>
-                </div> 
-                <div className="ratingTool">
-                    <RatingTool/>
-                </div>
-                <div className="bottomToolText">
-                        <h2>...or is it Not?</h2>
-                </div> 
-                <div className="btnDiv">
-                    <button className="btn btn-primary rateBtn" onClick={handleClick}>
-                        Submit Rating to Show Next Vessel
-                    </button>
-                </div>
                 <div className="mainYachtImage">
-                    <img src={filteredYacht.image} alt="Vessel to be Rated by User"/>
+                    <img className="mainYachtImage" src={filteredYacht.image} alt="Vessel to be Rated by User"/>
                 </div>
             </div>
 
@@ -66,13 +62,13 @@ export const YachtRatingFlow = () => {
                     <h4>Your rating: {sessionStorage.getItem("yacht_rating")}</h4>
                 </div>
                 <div className="secondaryYachtImage">
-                    <img src={sessionStorage.getItem("saved_yacht_image")} alt="Previous Vessel Rated by User"/>
+                    <img className="secondaryYachtImage" src={sessionStorage.getItem("saved_yacht_image")} alt="Previous Vessel Rated by User"/>
                 </div>
                 <div className="averageRating">
-                    <h4>Average rating:{JSON.parse(sessionStorage.getItem("yacht_last_rated"))}</h4>
+                    <h4>Average rating: {JSON.parse(sessionStorage.getItem("yacht_last_rated"))}</h4>
                 </div>
             </div>
-            
+        </div>
         </div>
     )
 }
