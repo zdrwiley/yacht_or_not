@@ -1,7 +1,6 @@
 .navbar {
     display: flex;
     flex-direction: row;
-    background-color: lightgray;
 }
 
 .navbar__item {
@@ -9,6 +8,7 @@
     margin-right: .25rem;
     padding-right: 3rem;
     color: navy;
+    border: none !important;
 }
 
 .navbar__logo {

@@ -8,7 +8,7 @@ import "./RatingFlow.css"
 export const YachtRatingFlow = () => {
     const {yachts, getYachts, rateYacht} = useContext(YachtContext)
     const [filteredYacht, setFilteredYacht] = useState({})
-    const [counter, setCounter] = useState(0)
+    const [counter, setCounter] = useState(1)
 
     useEffect(() => {setCounter(counter +1)}, [])
 

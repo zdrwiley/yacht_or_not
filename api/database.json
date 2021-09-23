@@ -200,6 +200,111 @@
       "yacht_id": 1,
       "rating": "6",
       "id": 19
+    },
+    {
+      "yacht_id": 1,
+      "rating": "10",
+      "id": 20
+    },
+    {
+      "yacht_id": 1,
+      "rating": "6",
+      "id": 21
+    },
+    {
+      "yacht_id": 2,
+      "rating": "10",
+      "id": 22
+    },
+    {
+      "yacht_id": 3,
+      "rating": "5",
+      "id": 23
+    },
+    {
+      "yacht_id": 4,
+      "rating": "10",
+      "id": 24
+    },
+    {
+      "yacht_id": 5,
+      "rating": "10",
+      "id": 25
+    },
+    {
+      "yacht_id": 6,
+      "rating": "1",
+      "id": 26
+    },
+    {
+      "yacht_id": 7,
+      "rating": "7",
+      "id": 27
+    },
+    {
+      "yacht_id": 8,
+      "rating": "9",
+      "id": 28
+    },
+    {
+      "yacht_id": 1,
+      "rating": "10",
+      "id": 29
+    },
+    {
+      "yacht_id": 2,
+      "rating": "6",
+      "id": 30
+    },
+    {
+      "yacht_id": 3,
+      "rating": "10",
+      "id": 31
+    },
+    {
+      "yacht_id": 4,
+      "rating": "1",
+      "id": 32
+    },
+    {
+      "yacht_id": 1,
+      "rating": "5",
+      "id": 33
+    },
+    {
+      "yacht_id": 2,
+      "rating": "8",
+      "id": 34
+    },
+    {
+      "yacht_id": 3,
+      "rating": "9",
+      "id": 35
+    },
+    {
+      "yacht_id": 4,
+      "rating": "10",
+      "id": 36
+    },
+    {
+      "yacht_id": 5,
+      "rating": "1",
+      "id": 37
+    },
+    {
+      "yacht_id": 6,
+      "rating": "6",
+      "id": 38
+    },
+    {
+      "yacht_id": 1,
+      "rating": "5",
+      "id": 39
+    },
+    {
+      "yacht_id": 1,
+      "rating": "10",
+      "id": 40
     }
   ],
   "types": [
