@@ -390,6 +390,36 @@
       "yacht_id": 3,
       "rating": "1",
       "id": 57
+    },
+    {
+      "yacht_id": 1,
+      "rating": "5",
+      "id": 58
+    },
+    {
+      "yacht_id": 2,
+      "rating": "9",
+      "id": 59
+    },
+    {
+      "yacht_id": 3,
+      "rating": "10",
+      "id": 60
+    },
+    {
+      "yacht_id": 4,
+      "rating": "1",
+      "id": 61
+    },
+    {
+      "yacht_id": 5,
+      "rating": "3",
+      "id": 62
+    },
+    {
+      "yacht_id": 6,
+      "rating": "7",
+      "id": 63
     }
   ],
   "types": [

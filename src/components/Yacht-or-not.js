@@ -23,7 +23,7 @@ export const Yacht = () => {
 
             <div className='footer'>
                     <p>Help us keep this site FUN, CLEAN, and NAUTICAL <span className="anchor">&#9875;</span></p>
-                    <p>© 2021 - All rights reserved.</p> 
+                    <p>© 2021 The Yacht Pun Corporation.  All rights reserved.</p> 
                     <p><a className="footer_small" href="./about">Why does this exist?</a></p>
             </div>
         </div>
