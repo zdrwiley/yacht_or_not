@@ -10,17 +10,11 @@
     width: 80%;
     justify-content: space-evenly;
     padding: .5rem 0rem .5rem 0rem;
-    background-color: lightsteelblue;
     cursor: pointer;
+    margin-top: .25rem;
     margin-left: auto;
     margin-right: auto;
 }
-    .on {
-        background-color: lightsteelblue;
-    }
-    .off {
-        background-color: (231, 232, 235);
-    }
 
 h2 {
     text-align: center;
@@ -30,11 +24,12 @@ img.mainYachtImage {
     display: flex;
     width: 80%;
     height: auto;
-    border: inset .5px navy;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .btnDiv {

@@ -13,15 +13,17 @@
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 40%;
 }
 
 .footer {
     width: 100%;
     text-align: center;
+    color: navy;
 }
 
 a.footer_small {
     font-size: 15px;
+    text-decoration: underline navy;
 }
 

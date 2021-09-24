@@ -34,10 +34,14 @@ export const SubmitForm = () => {
     }, [] )
 
     return (
-        <form className="uploadForm">
-            <h2>Upload a New Vessel</h2>
-            <fieldset>
-                <div className="form-group">
+        <div className="form_wrapper"> 
+            <h1>Upload a Vessel</h1>
+            <h4>Confused about whether a boat is a yacht or not?</h4> 
+            <h4>Upload a pic and let the internet decide for you!</h4>
+        <div className="uploadForm">
+        <form>
+            <fieldset className="yachtName">
+                <div className="yachtName">
                 <label htmlFor="yachtName">Vessel Name: </label>
                 <input type="text" id="yachtName" name="yachtName" required autoFocus className="form-control"
                 placeholder="Yacht Name"
@@ -46,7 +50,7 @@ export const SubmitForm = () => {
             </fieldset>
             <fieldset>
                 <div className="form-group">
-                <label htmlFor="yachtLength">Length: </label>
+                <label htmlFor="yachtLength">Vessel Length: </label>
                 <input type="text" id="yachtLength" name="length" required autoFocus className="form-control"
                 placeholder="Length in Feet"
                 onChange={handleControlledInputChange}/>
@@ -54,7 +58,8 @@ export const SubmitForm = () => {
             </fieldset>
             <fieldset>
                 <div className="form-group">
-                    <label htmlFor="type">Select vessel type: </label>
+                    <label htmlFor="type">Vessel type: </label>
+                    <div className="dropDown">
                     <select value={yacht.type} name="type" id="vesselType" className="form-control" onChange={handleControlledInputChange}>
                         <option value="0">Select from drop down list</option>
                         <option value="1">Motorboat</option>
@@ -65,6 +70,7 @@ export const SubmitForm = () => {
                         <option value="6">Speedboat</option>
                         <option value="7">Mega Yacht</option>
                     </select>
+                    </div>
                 </div>
             </fieldset>
             <fieldset>
@@ -75,12 +81,14 @@ export const SubmitForm = () => {
                 onChange={handleControlledInputChange}/>
                 </div>
             </fieldset>
-            <button className="btn btn-primary saveBtn" disabled={isLoading} onClick={event => {
+            <button className="upload" disabled={isLoading} onClick={event => {
                 event.preventDefault()
                 handleSaveYacht()
                 }}> 
                 Upload and Save
             </button>
         </form>
+        </div>
+        </div>
     )
 }   

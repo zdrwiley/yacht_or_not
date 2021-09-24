@@ -1,6 +1,10 @@
 .navbar {
     display: flex;
     flex-direction: row;
+    background-color: whitesmoke;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+    padding-top: 1rem;
 }
 
 .navbar__item {
@@ -12,15 +16,15 @@
 }
 
 .navbar__logo {
-    margin-top: -.75rem;
-    margin-right: -3rem;
+    margin-top: -.65rem;
+    margin-right: -5rem;
     margin-left: -5rem;
 }
 
 /* unvisited link */
 a:link {
     color: navy;
-    text-decoration: none;
+    text-decoration: underline navy;
     font-size: 18px;
   }
   

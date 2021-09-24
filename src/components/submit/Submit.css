@@ -1,13 +1,82 @@
-.uploadForm {
-    display: block; 
-    border: 2px solid lightsteelblue;
-    margin: 1em;
-    padding: 1em;   
+form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(202, 224, 245);
+    border-radius: 10px;
 }
 
-.form-group {
-    display: block;
-    align-content: flex-start;
-    margin: 1em;
-    padding: 1em;   
+fieldset {
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+    fieldset.yachtName {
+        margin-top: 2rem;
+    }
+
+input {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: .25rem;
+}
+
+select {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: .25rem;
+}
+
+h1 {
+    text-align: center;
+    color: navy;
+    
+}
+
+h4 {
+    text-align: center;
+    margin: .25rem;
+    font-weight: normal;
+    color: navy;
+}
+
+button {
+    background: linear-gradient(to bottom, #5a6cb5 0%,#153585 100%);
+    border-bottom: 3px solid #0f1491;
+    border-radius: 5px;
+    color: #cdcdcd;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.4);
+    font-size: 15px;
+    text-align: left;
+    text-indent: 5px;
+    box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2);
+    padding-right: .5rem;
+}
+
+button.on {
+    background: linear-gradient(to bottom, #934646 0%,#800202 100%);
+    border-bottom: 3px solid #6f0505;
+}
+
+button.upload {
+    width: 25%;
+    align-self: center;
+    margin-bottom: 1rem;
+    padding-left: 1.25rem;
+}
+
+button.rate {
+    padding: .5rem;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #934646 0%,#800202 100%);
+    border-bottom: 3px solid #6f0505;
 }

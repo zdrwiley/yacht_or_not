@@ -4,6 +4,7 @@ import React, { useContext, useEffect, useState } from "react"
 import { useHistory } from "react-router-dom"
 import { YachtContext } from "./YachtProvider"
 import { RatingTool } from "../rating_tool/Rating"
+import MyImage from "../resources/YACHT (3).gif"
 import "./Yachts.css"
 
 export const YachtView = () => {
@@ -43,12 +44,15 @@ export const YachtView = () => {
     
     return (
         <div className="outerYachtWrapper">
+            <div className='main_logo'>
+                <img src={MyImage} alt="Yacht or Not"/>
+             </div>
              <div className="ratingTool">
                 <RatingTool/>
             </div>
             <br></br>
             <div className="btnDiv">
-                <button className="button" onClick={() => (`${history.push(`/yachts/ratingflow/`)} & ${handleClick()}`)}>
+                <button className="rate" onClick={() => (`${history.push(`/yachts/ratingflow/`)} & ${handleClick()}`)}>
                     Rate and Show Next!
                 </button>
             </div>

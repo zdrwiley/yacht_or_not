@@ -10,13 +10,13 @@ export const NavBar = () => {
                 <Link className="navbar__link" to="/"><img className="navbar__logo" src={MyImage} alt="logo"/></Link>
             </li>
             <li className="navbar__item">
-                <Link className="navbar__link" to="/">Rate Vessels</Link>
+                <Link className="navbar__link" to="/">Home</Link>
             </li>
             <li className="navbar__item">
-                <Link className="navbar__link" to="/rankings">Vessel Rankings</Link>
+                <Link className="navbar__link" to="/rankings">Top 10 Yachts</Link>
             </li>
             <li className="navbar__item">
-                <Link className="navbar__link" to="/submit">Submit Vessel</Link>
+                <Link className="navbar__link" to="/submit">Submit a Photo</Link>
             </li>
         </ul>
     )

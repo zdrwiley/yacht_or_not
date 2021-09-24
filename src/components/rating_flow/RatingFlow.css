@@ -13,14 +13,15 @@
 .primaryFlowView {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .secondaryFlowView {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
     margin-right: 1em;
-    margin-top: 2em;
+    margin-top: 5em;
 }
 
 .mainYachtImage {
@@ -28,7 +29,9 @@
     width: 100%;
 }
 
-.secondaryYachtImage {
+img.secondaryYachtImage {
     display: flex;
     width: 90%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }

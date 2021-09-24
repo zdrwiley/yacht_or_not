@@ -1,14 +1,21 @@
 .ranking {
-    border: solid navy .5px;
+    border-top: solid navy .5px;
     padding: .5rem;
     margin: .5rem;
+    color: navy;
+}
+
+h3 {
+    margin-left: .75rem;
+    color: navy;
 }
 
 img.yachtPhoto {
     display: flex;
     width: 100%;
     height: auto;
-    border: solid .5px navy;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
