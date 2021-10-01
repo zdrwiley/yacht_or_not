@@ -3,12 +3,16 @@
 import React, { useState, useContext, useEffect } from "react"
 import { YachtContext } from "../yachts/YachtProvider"
 import { RatingTool } from "../rating_tool/Rating"
+import { RatingContext } from "../rating_tool/RatingProvider"
 import "./RatingFlow.css"
 
 export const YachtRatingFlow = () => {
     const {yachts, getYachts, rateYacht} = useContext(YachtContext)
     const [filteredYacht, setFilteredYacht] = useState({})
     const [counter, setCounter] = useState(1)
+    const {ratings, getRatings} = useContext(RatingContext)
+
+    useEffect(() => {getRatings()}, [])
 
     useEffect(() => {setCounter(counter +1)}, [])
 
@@ -36,8 +40,21 @@ export const YachtRatingFlow = () => {
         )
     }
 
-    if (!yachts.length) return <p>Loading Data</p> 
-    if (!filteredYacht.length) return <p>Loading Data</p> 
+    const getAverageRating = (counter) => {
+        const foundRatingObjects = ratings.filter(rating => rating.yacht_id === counter)
+        const foundRatingValues = foundRatingObjects.map(rating => parseInt(rating.rating))
+        const sum = foundRatingValues.reduce(function (previousValue, currentValue) {
+            return previousValue + currentValue
+            }, 0)
+        const average = Math.floor(sum / foundRatingValues.length)
+        return average
+    }
+
+    let foundAvg = getAverageRating(counter)
+
+    if (!yachts.length) return <p>Loading All Yachts Data</p> 
+    if (!filteredYacht.length) return <p>Loading Filtered Yacht Data</p> 
+    if (!ratings.length) return <p>Loading Rating Data</p>
 
     return (
         <div className="outerFlowWrapper"> 
@@ -65,7 +82,7 @@ export const YachtRatingFlow = () => {
                     <img className="secondaryYachtImage" src={sessionStorage.getItem("saved_yacht_image")} alt="Previous Vessel Rated by User"/>
                 </div>
                 <div className="averageRating">
-                    <h4>Average rating: {JSON.parse(sessionStorage.getItem("yacht_last_rated"))}</h4>
+                    <h4>Average rating: {foundAvg}</h4>
                 </div>
             </div>
         </div>

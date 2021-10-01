@@ -12,7 +12,10 @@
     margin-right: .25rem;
     padding-right: 3rem;
     color: navy;
-    border: none !important;
+}
+
+li {
+  list-style: none;
 }
 
 .navbar__logo {
@@ -24,7 +27,7 @@
 /* unvisited link */
 a:link {
     color: navy;
-    text-decoration: underline navy;
+    text-decoration: none;
     font-size: 18px;
   }
   

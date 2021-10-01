@@ -13,7 +13,7 @@ export const NavBar = () => {
                 <Link className="navbar__link" to="/">Home</Link>
             </li>
             <li className="navbar__item">
-                <Link className="navbar__link" to="/rankings">Top 10 Yachts</Link>
+                <Link className="navbar__link" to="/rankings">Top Yachts</Link>
             </li>
             <li className="navbar__item">
                 <Link className="navbar__link" to="/submit">Submit a Photo</Link>

@@ -37,13 +37,13 @@ export const RatingProvider = (props) => {
         return average
     }
 
-    const updateAverageRating = (average_rating) => {
+    const updateAverageRating = averageRating => {
         return fetch(`${database}/yachts`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify(average_rating)
+            body: JSON.stringify(averageRating)
         })
         .then(res => res.json())
         .then(data => {

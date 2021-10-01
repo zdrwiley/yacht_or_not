@@ -20,18 +20,18 @@ export const RankingView = () => {
     return (
         <div className="rankingsWrapper">
             <h1>The Yacht List</h1>
-            <h3>All-time most yachty yachts:</h3>
+            <h3>All-time yachtyest yachts:</h3>
             {rankedYachts.map(yacht => {
                 return (
                 <div className="ranking" key={`rankingList=${yacht.id}`} id={`rank=${yacht.id}`}>
                     <div className="YachtName">
-                        Name:  { yacht.yachtName }
+                        Name:  {yacht.yachtName}
                     </div>
                     <div className="yachtLength">
-                        Length: {yacht.length }
+                        Length: {yacht.length}'
                     </div>
                     <div className="yachtAverageRating">
-                        Average Rating: { yacht.average_rating }
+                        Average Rating: {yacht.average_rating}
                     </div>
                     <div className="yachtPhoto">
                         <img className="yachtPhoto" src={`${yacht.image}`} alt="yacht"/> 
