@@ -4,7 +4,7 @@ export const RatingContext = createContext()
 
 export const RatingProvider = (props) => {
     const [ratings, setRatings] = useState([])
-    const [yachts, setYachts] = useState([])
+    const [averageRatings, setAverageRatings] = useState([])
 
     const database = "http://localhost:8088"
 
@@ -19,31 +19,27 @@ export const RatingProvider = (props) => {
             console.error("getRatings failed:", error);
         })
     }
-
-    const getYachts = () => {
-        return fetch(`${database}/yachts`)
-        .then(res => res.json())
-        .then(setYachts)
-    } 
     
-     const getAverageRating = (yachtId) => {
-        getRatings()
-        const foundRatingObjects = ratings.filter(rating => rating.yacht_id === yachtId)
-        const foundRatingValues = foundRatingObjects.map(rating => parseInt(rating.rating))
-        const sum = foundRatingValues.reduce(function (previousValue, currentValue) {
-            return previousValue + currentValue
-            }, 0)
-        const average = Math.floor(sum / foundRatingValues.length)
-        return average
+    const getAverageRatings = () => {
+        return fetch(`${database}/averageRatings`)
+        .then(res => res.json())
+        .then(setAverageRatings)
+        .then(data => {
+            console.log("getAverageRatings succeeded:", data);
+        })
+        .catch((error) => {
+            console.error("getAverageRatings failed:", error);
+        })
     }
 
-    const updateAverageRating = averageRating => {
-        return fetch(`${database}/yachts`, {
-            method: "POST",
+
+    const updateAverageRating = (yachtId, newAverage) => {
+        return fetch(`${database}/yachts/${yachtId}`, {
+            method: "PUT",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify(averageRating)
+            body: JSON.stringify({average_rating: newAverage})
         })
         .then(res => res.json())
         .then(data => {
@@ -55,7 +51,7 @@ export const RatingProvider = (props) => {
     }
 
     return (
-        <RatingContext.Provider value={{ratings, setRatings, getRatings, getAverageRating, yachts, getYachts, setYachts, updateAverageRating}}>
+        <RatingContext.Provider value={{ratings, setRatings, getRatings, updateAverageRating, getAverageRatings, setAverageRatings, averageRatings}}>
             {props.children}
         </RatingContext.Provider>
     )
