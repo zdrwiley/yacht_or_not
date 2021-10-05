@@ -10,7 +10,7 @@ export const YachtRatingFlow = () => {
     const {yachts, getYachts, rateYacht} = useContext(YachtContext)
     const [filteredYacht, setFilteredYacht] = useState({})
     const [counter, setCounter] = useState(1)
-    const {ratings, getRatings} = useContext(RatingContext)
+    const {ratings, getRatings, updateAverageRating} = useContext(RatingContext)
 
     useEffect(() => {getRatings()}, [])
 
@@ -38,6 +38,7 @@ export const YachtRatingFlow = () => {
                 "rating": sessionStorage.getItem("yacht_rating")
             }
         )
+        updateAverageRating(counter, foundAvg)
     }
 
     const getAverageRating = (counter) => {

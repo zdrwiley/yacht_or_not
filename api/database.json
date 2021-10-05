@@ -36,7 +36,7 @@
       "yachtName": "MB01",
       "length": 30,
       "user_id": 2,
-      "average_rating": 3,
+      "average_rating": 6,
       "type": 1,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Yacht_MB01.jpg/1600px-Yacht_MB01.jpg"
     },
@@ -45,7 +45,7 @@
       "yachtName": "Attessa IV",
       "length": 225,
       "user_id": 2,
-      "average_rating": 8,
+      "average_rating": 6,
       "type": 1,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Attessa_IV_%24150mil_mega_yacht.jpg/640px-Attessa_IV_%24150mil_mega_yacht.jpg"
     },
@@ -72,7 +72,7 @@
       "yachtName": "Agram",
       "length": 175,
       "user_id": 3,
-      "average_rating": 9,
+      "average_rating": 6,
       "type": 2,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Agram%2C_Zadar_%28P1080815%29.jpg/640px-Agram%2C_Zadar_%28P1080815%29.jpg"
     },
@@ -81,7 +81,7 @@
       "yachtName": "Barcelona",
       "length": 22,
       "user_id": 2,
-      "average_rating": 5,
+      "average_rating": 4,
       "type": 1,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Yacht_in_Barcelona_-_2017.jpg/640px-Yacht_in_Barcelona_-_2017.jpg"
     },
@@ -98,7 +98,7 @@
       "yachtName": "Boaty McBoatface",
       "length": 225,
       "user_id": 3,
-      "average_rating": 10,
+      "average_rating": 5,
       "image": "https://static01.nyt.com/images/2016/03/22/nytnow/22xp-boaty/22xp-boaty-superJumbo.jpg",
       "type": 1,
       "id": 9
@@ -107,7 +107,7 @@
       "yachtName": "Rowboat",
       "length": 9,
       "user_id": 0,
-      "average_rating": 1,
+      "average_rating": 5,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Rowboats_in_Sweden_NZ7_0150_%2850724363856%29.jpg/640px-Rowboats_in_Sweden_NZ7_0150_%2850724363856%29.jpg",
       "type": 3,
       "id": 10
@@ -116,7 +116,7 @@
       "yachtName": "Sisak IV",
       "length": 40,
       "user_id": 0,
-      "average_rating": 3,
+      "average_rating": 5,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/18-04-05_SISAK_IV_-_IMO_9206346_17-09-04.jpg/640px-18-04-05_SISAK_IV_-_IMO_9206346_17-09-04.jpg",
       "type": 1,
       "id": 11
@@ -125,7 +125,7 @@
       "yachtName": "JMSDF Haruna",
       "length": 502,
       "user_id": 0,
-      "average_rating": 4,
+      "average_rating": 5,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/JMSDF_ship_Haruna_%28DDH_141%29.jpg/640px-JMSDF_ship_Haruna_%28DDH_141%29.jpg",
       "type": 4,
       "id": 12
@@ -134,7 +134,7 @@
       "yachtName": "Bluenose II",
       "length": 150,
       "user_id": 0,
-      "average_rating": 6,
+      "average_rating": 8,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/US_Navy_060610-N-6639M-207_Ships_sail_into_downtown_Norfolk%2C_to_participate_in_Norfolk_Harbor_Fest.jpg/640px-US_Navy_060610-N-6639M-207_Ships_sail_into_downtown_Norfolk%2C_to_participate_in_Norfolk_Harbor_Fest.jpg",
       "type": 2,
       "id": 13
@@ -161,7 +161,7 @@
       "yachtName": "Oliverboat",
       "length": 10,
       "user_id": 0,
-      "average_rating": 3,
+      "average_rating": 2,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Oliver_Dinghy_Boat_Rigid-_Oliverboat.jpg/640px-Oliver_Dinghy_Boat_Rigid-_Oliverboat.jpg",
       "type": 3,
       "id": 16
@@ -170,7 +170,7 @@
       "yachtName": "Kayak",
       "length": 6,
       "user_id": 0,
-      "average_rating": 2,
+      "average_rating": 1,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Kayak%2C_Stockholm_%28P1090591%29.jpg/640px-Kayak%2C_Stockholm_%28P1090591%29.jpg",
       "type": 3,
       "id": 17
@@ -179,7 +179,7 @@
       "yachtName": "USS Enterprise",
       "length": 1122,
       "user_id": 0,
-      "average_rating": 6,
+      "average_rating": 7,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/USS_Enterprise_%28CVN-65%29_underway_July_1987.jpg/640px-USS_Enterprise_%28CVN-65%29_underway_July_1987.jpg",
       "type": 4,
       "id": 18
@@ -896,6 +896,96 @@
       "yacht_id": 18,
       "rating": "8",
       "id": 142
+    },
+    {
+      "yacht_id": 1,
+      "rating": "8",
+      "id": 143
+    },
+    {
+      "yacht_id": 2,
+      "rating": "6",
+      "id": 144
+    },
+    {
+      "yacht_id": 3,
+      "rating": "5",
+      "id": 145
+    },
+    {
+      "yacht_id": 4,
+      "rating": "4",
+      "id": 146
+    },
+    {
+      "yacht_id": 5,
+      "rating": "8",
+      "id": 147
+    },
+    {
+      "yacht_id": 6,
+      "rating": "9",
+      "id": 148
+    },
+    {
+      "yacht_id": 7,
+      "rating": "3",
+      "id": 149
+    },
+    {
+      "yacht_id": 8,
+      "rating": "4",
+      "id": 150
+    },
+    {
+      "yacht_id": 9,
+      "rating": "9",
+      "id": 151
+    },
+    {
+      "yacht_id": 10,
+      "rating": "1",
+      "id": 152
+    },
+    {
+      "yacht_id": 11,
+      "rating": "2",
+      "id": 153
+    },
+    {
+      "yacht_id": 12,
+      "rating": "4",
+      "id": 154
+    },
+    {
+      "yacht_id": 13,
+      "rating": "6",
+      "id": 155
+    },
+    {
+      "yacht_id": 14,
+      "rating": "1",
+      "id": 156
+    },
+    {
+      "yacht_id": 15,
+      "rating": "2",
+      "id": 157
+    },
+    {
+      "yacht_id": 16,
+      "rating": "3",
+      "id": 158
+    },
+    {
+      "yacht_id": 17,
+      "rating": "1",
+      "id": 159
+    },
+    {
+      "yacht_id": 18,
+      "rating": "6",
+      "id": 160
     }
   ],
   "types": [

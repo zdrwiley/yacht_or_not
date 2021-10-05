@@ -25,7 +25,7 @@ export const AverageRatingTool = () => {
 
     const handleClick = () => {
        updateAverageRating(5, ratingToSend)
-       console.log(ratingToSend) 
+       console.log(`The new average rating is: ${ratingToSend}`) 
     }
 
     useEffect(() => {getRatings()}, [])
