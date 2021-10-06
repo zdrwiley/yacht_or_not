@@ -1,5 +1,6 @@
 .outerYachtWrapper {
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-content: center;
@@ -8,7 +9,7 @@
 .ratingTool {
     font-family: 'Playfair Display', serif;
     display: flex;
-    width: 70%;
+    width: 50%;
     justify-content: space-evenly;
     padding: .5rem 0rem .5rem 0rem;
     cursor: pointer;

@@ -70,8 +70,8 @@ export const YachtRatingFlow = () => {
             </div>
         <div className="innerFlowWrapper"> 
             <div className="primaryFlowView">
-                <div className="mainYachtImage">
-                    <img className="mainYachtImage" src={filteredYacht.image} alt="Vessel to be Rated by User"/>
+                <div className="primaryYachtImage">
+                    <img className="primaryYachtImage" src={filteredYacht.image} alt="Vessel to be Rated by User"/>
                 </div>
             </div>
 

@@ -16,7 +16,7 @@ export const NavBar = () => {
                 <Link className="navbar__link" to="/rankings">Top Yachts</Link>
             </li>
             <li className="navbar__item">
-                <Link className="navbar__link" to="/submit">Submit a Photo</Link>
+                <Link className="navbar__link" to="/submit">Upload a Vessel</Link>
             </li>
         </ul>
     )

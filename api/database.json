@@ -986,6 +986,66 @@
       "yacht_id": 18,
       "rating": "6",
       "id": 160
+    },
+    {
+      "yacht_id": 1,
+      "rating": "10",
+      "id": 161
+    },
+    {
+      "yacht_id": 1,
+      "rating": "6",
+      "id": 162
+    },
+    {
+      "yacht_id": 3,
+      "rating": "9",
+      "id": 163
+    },
+    {
+      "yacht_id": 4,
+      "rating": "5",
+      "id": 164
+    },
+    {
+      "yacht_id": 1,
+      "rating": "8",
+      "id": 165
+    },
+    {
+      "yacht_id": 1,
+      "rating": "8",
+      "id": 166
+    },
+    {
+      "yacht_id": 2,
+      "rating": "3",
+      "id": 167
+    },
+    {
+      "yacht_id": 3,
+      "rating": "7",
+      "id": 168
+    },
+    {
+      "yacht_id": 4,
+      "rating": "3",
+      "id": 169
+    },
+    {
+      "yacht_id": 5,
+      "rating": "6",
+      "id": 170
+    },
+    {
+      "yacht_id": 6,
+      "rating": "8",
+      "id": 171
+    },
+    {
+      "yacht_id": 7,
+      "rating": "4",
+      "id": 172
     }
   ],
   "types": [

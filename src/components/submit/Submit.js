@@ -36,8 +36,6 @@ export const SubmitForm = () => {
     return (
         <div className="form_wrapper"> 
             <h1>Upload a Vessel</h1>
-            <h4>Confused about whether a boat is a yacht or not?</h4> 
-            <h4>Upload a pic and let the internet decide for you!</h4>
         <div className="uploadForm">
         <form>
             <fieldset className="yachtName">
