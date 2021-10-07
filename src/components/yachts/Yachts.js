@@ -50,16 +50,17 @@ export const YachtView = () => {
              <div className="ratingTool">
                 <RatingTool/>
             </div>
+            <br></br>
+            <div className="btnDiv">
+                <button className="rate" onClick={() => (`${history.push(`/yachts/ratingflow/`)} & ${handleClick()}`)}>
+                    Rate and Show Next!
+                </button>
+            </div>
             <div className="mainYachtImage">
                 { filteredYacht.id ?  
                     <img className="mainYachtImage" src={filteredYacht.image} alt="Is this a yacht?"/>  
                    : <p>Image failed to load</p> 
                 }                           
-            </div>
-            <div className="btnDiv">
-                <button className="rate" onClick={() => (`${history.push(`/yachts/ratingflow/`)} & ${handleClick()}`)}>
-                    Rate and Show Next!
-                </button>
             </div>
         </div> 
     )

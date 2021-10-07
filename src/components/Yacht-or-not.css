@@ -14,7 +14,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 0rem;
-    width: 40%;
+    width: 30%;
     max-width: 300px;
 }
 
@@ -29,3 +29,6 @@ a.footer_small {
     text-decoration: underline navy;
 }
 
+p {
+    margin-left: 5rem;
+}

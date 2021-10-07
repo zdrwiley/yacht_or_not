@@ -47,11 +47,12 @@ export const YachtRatingFlow = () => {
         const sum = foundRatingValues.reduce(function (previousValue, currentValue) {
             return previousValue + currentValue
             }, 0)
-        const average = Math.floor(sum / foundRatingValues.length)
-        return average
+        const average = sum / foundRatingValues.length
+        const product = average.toFixed(2)
+        return product
     }
 
-    let foundAvg = getAverageRating(counter)
+    let foundAvg = getAverageRating(counter - 1)
 
     if (!yachts.length) return <p>Loading All Yachts Data</p> 
     if (!filteredYacht.length) return <p>Loading Filtered Yacht Data</p> 

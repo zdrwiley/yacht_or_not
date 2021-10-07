@@ -17,8 +17,9 @@ export const AverageRatingTool = () => {
         const sum = foundRatingValues.reduce(function (previousValue, currentValue) {
             return previousValue + currentValue
             }, 0)
-        const average = Math.floor(sum / foundRatingValues.length)
-        return average
+        const average = sum / foundRatingValues.length
+        const product = average.toFixed(2)
+        return product
     }
 
     const ratingToSend = calculateAverageRating(5)

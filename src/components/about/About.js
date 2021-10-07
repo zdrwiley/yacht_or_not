@@ -8,10 +8,7 @@ export const AboutSite = () => {
         </h1>
         
         <p>
-            I created Yacht-or-Not as a front end capstone project while attending Nashville Software School's web development bootcamp. 
-        </p>
-        <p>
-            My hope is that this site can serve as a resource and provide a sense of community for people who need help deciding if maritime vessels are yachts or not. 
+            Yacht-or-Not is a resource for people who need help deciding if maritime vessels are yachts or not, and for ship owners who are uncertain if their vessel is a yacht.
         </p>
     </div>
         )
